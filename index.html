@@ -8,22 +8,27 @@
  font-size: 40px;
  font-family: Arial;
 }
-    background: -moz-linear-gradient( top ,
-        rgba(255, 0, 0, 1) 0%,
-        rgba(255, 255, 0, 1) 15%,
-        rgba(0, 255, 0, 1) 30%,
-        rgba(0, 255, 255, 1) 50%,
-        rgba(0, 0, 255, 1) 65%,
-        rgba(255, 0, 255, 1) 80%,
-        rgba(255, 0, 0, 1) 100%);
-    background: -webkit-gradient(linear,  left top,  left bottom, 
-        color-stop(0%, rgba(255, 0, 0, 1)), 
-        color-stop(15%, rgba(255, 255, 0, 1)),
-        color-stop(30%, rgba(0, 255, 0, 1)),
-        color-stop(50%, rgba(0, 255, 255, 1)),
-        color-stop(65%, rgba(0, 0, 255, 1)),
-        color-stop(80%, rgba(255, 0, 255, 1)),
-        color-stop(100%, rgba(255, 0, 0, 1)));
+# bg {
+    background-color: white;
+    width: 700px;
+    height: 500px;
+}
+body {
+	font-family: 'Press Start 2P', cursive;
+
+	/* W3C */
+	background: linear-gradient(top, #ff3232 0%,#fcf528 16%,#28fc28 32%,#28fcf8 50%,#272ef9 66%,#ff28fb 82%,#ff3232 100%);
+
+	/* Firefox */
+	background: -moz-linear-gradient(top, #ff3232 0%, #fcf528 16%, #28fc28 32%, #28fcf8 50%, #272ef9 66%, #ff28fb 82%, #ff3232 100%);
+
+	/* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3232), color-stop(16%,#fcf528), color-stop(32%,#28fc28), color-stop(50%,#28fcf8), color-stop(66%,#272ef9), color-stop(82%,#ff28fb), color-stop(100%,#ff3232));
+
+	/* Chrome10+,Safari5.1+ */
+	background: -webkit-linear-gradient(top, #ff3232 0%,#fcf528 16%,#28fc28 32%,#28fcf8 50%,#272ef9 66%,#ff28fb 82%,#ff3232 100%);
+ }
+  
 </style>
  
 <script type="text/javascript">
@@ -40,10 +45,10 @@ function rndTEXT() {
 onload = function() { rndTEXT(); }
 
 </script>
-
+<div id="bg">   
  <center><img src="http://i.imgur.com/fgUjqYf.png"></center>
 <div id="CK" align = "center"></div>
-
+ </div>
 
 </body>
 </html>
