@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html>
+ <head>
 <title> Is C_K gay?</title>
 <body>
 
-<p><font size = "26"><center>Maybe.</font></p></center>
+<script type="text/javascript">
+var array = [
+'Signs point to yes.', 'Yes.', 'Reply hazy, try again.', 'Without a doubt.', 'My sources say no.', 'As I see it, yes.', 'You may rely on it.', 'Concentrate and ask again.', 'Outlook not so good.', 'It is decidedly so.', 'Better not tell you now.', 'Very doubtful.', 'Yes - definitely.', 'It is certain.', 'Cannot predict now.', 'Most likely.', 'Ask again later.', 'My reply is no.', 'Outlook good.', 'Don\'t count on it.'
+];
+
+function rndTEXT() {
+  var randnum= Math.floor(Math.random()*array.length);
+  document.getElementById('CK').innerHTML=array[randnum];
+}
+onload = function() { rndTEXT(); }
+
+</script>
+
+<div id="CK"><p><font size = "26"><center>Maybe.</font></p></center></div>
+
+
+  </head>
+
 
 </body>
 </html>
